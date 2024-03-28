@@ -1,0 +1,17 @@
+.refresh {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.refresh > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.refresh:hover {
+  background-color: #f0f0f0;
+}
