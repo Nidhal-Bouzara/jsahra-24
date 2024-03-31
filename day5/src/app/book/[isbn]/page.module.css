@@ -18,7 +18,7 @@
   width: 100%;
   height: 100%;
   background-color: linea;
-  background-image: linear-gradient(180deg, transparent, #2A273880 99%);
+  background-image: linear-gradient(180deg, transparent, #2A273850 99%);
   position: absolute;
   top: 0;
   left: 0;
@@ -43,7 +43,7 @@
   padding: 0 30px;
 }
 
-.bookmark {
+.bookmarkPosition {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,13 +59,11 @@
   left: 65vw;
   backdrop-filter: blur(5px);
   margin-bottom: -50px;
+  transition: background-color 0.3s;
 }
 
-.bookmark svg {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  stroke-width: 1px;
+.bookmarkPosition:hover, .bookmarkPosition:focus, .bookmarkPosition:active {
+  background-color: #ffffff80;
 }
 
 .title {
@@ -114,4 +112,16 @@
   background-color: var(--off-light);
   position: relative;
   right: 6px;
+}
+
+.seeReviews {
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-image: linear-gradient(200deg, var(--off-highlight), var(--highlight));
+  border: none;
+  border-radius: 30px;
+  margin-top: 10px;
 }

@@ -1,3 +1,13 @@
+:root {
+  /* variables */
+  --dark: #0F0B20;
+  --off-dark: #2A2738;
+  --light: #FFFFFF;
+  --off-light: #837F91;
+  --highlight: #9055A2;
+  --off-highlight: #5B407C;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }

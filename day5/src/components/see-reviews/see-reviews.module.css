@@ -1,0 +1,11 @@
+.seeReviews {
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-image: linear-gradient(200deg, var(--off-highlight), var(--highlight));
+  border: none;
+  border-radius: 30px;
+  margin-top: 10px;
+}

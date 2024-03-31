@@ -1,0 +1,21 @@
+.form {
+/* remove default form styles */
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
+.bookmark {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.bookmark svg {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  stroke-width: 1px;
+}

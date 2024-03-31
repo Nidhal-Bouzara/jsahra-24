@@ -15,9 +15,25 @@ datasource db {
 }
 
 model Book {
-  id     Int    @id @default(autoincrement())
-  title  String
-  author String
-  review String
-  image  String
+  isbn           String           @id @unique
+  coverUrl       String
+  title          String
+  author         String
+  bookmarkedBy   User[]
+  BookmarkedBook BookmarkedBook[]
+}
+
+model User {
+  id              Int              @id @default(autoincrement())
+  bookmarkedBooks Book[]
+  BookmarkedBook  BookmarkedBook[]
+}
+
+model BookmarkedBook {
+  userId   Int
+  bookIsbn String
+  user     User   @relation(fields: [userId], references: [id])
+  book     Book   @relation(fields: [bookIsbn], references: [isbn])
+
+  @@id([userId, bookIsbn])
 }
