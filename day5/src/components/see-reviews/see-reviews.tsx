@@ -1,3 +1,4 @@
+'use client'
 import styles from './see-reviews.module.css';
 
 const SeeReviews = () => {
