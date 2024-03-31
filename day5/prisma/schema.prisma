@@ -15,7 +15,8 @@ datasource db {
 }
 
 model Book {
-  isbn           String           @id @unique
+  isbn10         String           @id @unique
+  isbn13         String           @unique
   coverUrl       String
   title          String
   author         String
@@ -33,7 +34,7 @@ model BookmarkedBook {
   userId   Int
   bookIsbn String
   user     User   @relation(fields: [userId], references: [id])
-  book     Book   @relation(fields: [bookIsbn], references: [isbn])
+  book     Book   @relation(fields: [bookIsbn], references: [isbn10])
 
   @@id([userId, bookIsbn])
 }
